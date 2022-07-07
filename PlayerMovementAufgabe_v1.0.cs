@@ -1,8 +1,8 @@
 /**
 * ========================================================================================
-* File:		PlayerMovement.cs
+* File:		PlayerMovementAufgabe_v1.0.cs
 * Author: 	Philipp Hermann
-* Brief: 	this script handles user input and basic player movement.
+* Brief: 	this script handles user input and basic player movement. It is not working without some tasks solved!
 * Date: 	07.07.2022
 * Version: 	1.0
 * ========================================================================================
