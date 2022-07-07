@@ -45,11 +45,7 @@ public class PlayerMovement : MonoBehaviour{
     
     public CharacterController2D controller; 
     //Dieses Skript greift auf das Skript "CharacterController2D" unter dem Namen "controller" zu.
-    public Animator animator;
-    //Dieses Skript greift auf einen Animator unter dem namen "animator" zu.
-
-    
-
+ 
     /*
     =================================================================================================
     Eine Variable runSpeed soll Kommazahlen speichern und mit dem Wert 40 initialisiert werden. 
@@ -92,9 +88,6 @@ public class PlayerMovement : MonoBehaviour{
         */
         //HIER EINFÜGEN
 
-        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
-        //die Animator-Variable "Speed" wird auf den Betrag von horizontalMove gesetzt. Das wird erst in Kapitel 9 wichtig.
-
         /*
         =======================================================================================================================
         Unity stellt die Funktionen "GetButtonDown" und "GetButtonUp" aus der Klasse "Input" zur Verfügung 
@@ -110,9 +103,6 @@ public class PlayerMovement : MonoBehaviour{
         if(/*HIER EINFÜGEN: wenn der (Alt)PositiveButton der Achse "Jump" gedrückt ist...*/){
             //soll die Variable "jump" auf 1 gesetzt werden...
             //HIER EINFÜGEN
-
-            //...und die Animator-Variable "IsJumping" soll wahr sein.
-            animator.SetBool("IsJumping", true); 
         }
 
         /*
@@ -129,17 +119,6 @@ public class PlayerMovement : MonoBehaviour{
         */
         //HIER EINFÜGEN
         
-    }
-
-    public void OnLanding(){
-        //Diese Funktion wird immer aufgerufen, wenn der Charakter landet, also der groundcheck von false auf true wechselt.
-        animator.SetBool("IsJumping", false); //Beim Landen soll die Animator-Variable "IsJumping" wieder auf false gesetzt werden.
-    }
-
-    public void OnCrouching(bool IsCrouching){
-        //Diese Funktion wird immer ausgeführt, wenn der Charakter schleicht
-        animator.SetBool("IsCrouching", crouch); /*hier kann die Variable "crouch" verwendet werden, weil diese durch die if-else if-Bedingung in
-        Update() schon den gewünschten Wert erhält.*/
     }
 
     void FixedUpdate(){ //wird ungefähr 50 mal pro Sekunde aufgerufen, hier kommt alles rein, was direkt Körper betrifft, die von Physik beeinflusst werden.
