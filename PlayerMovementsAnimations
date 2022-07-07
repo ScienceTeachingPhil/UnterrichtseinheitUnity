@@ -1,6 +1,6 @@
 /**
 * ========================================================================================
-* File:		PlayerMovement.cs
+* File:		PlayerMovementAnimations.cs
 * Author: 	Philipp Hermann
 * Brief: 	this script handles user input, basic player movement and the connected animations.
 * Date: 	06.04.2022
