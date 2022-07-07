@@ -2,7 +2,7 @@
 * ========================================================================================
 * File:		PlayerMovement.cs
 * Author: 	Philipp Hermann
-* Brief: 	this script handles user input, basic player movement and the connected animations.
+* Brief: 	this script handles user input, basic player movement and the connected animations (animations currently commented!).
 * Date: 	06.04.2022
 * Version: 	1.0
 * ========================================================================================
